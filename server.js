@@ -23,6 +23,7 @@ app.get('/location', (req,res) => {
 });
 
 app.get('/weather', getWeather);
+app.get('/events', getEvents);
 
 
 // constructor function to buld a city object instances
@@ -32,6 +33,27 @@ function City(query, data){
   this.latitude = data.body.results[0].geometry.location.lat;
   this.longitude = data.body.results[0].geometry.location.lng;
 }
+
+function Event(url, name, event_date, summary) {
+  this.url = url;
+  this.name = name;
+  // Date makes time stamp prettier
+  this.event_date = new Date(event_date).toDateString();
+  this.summary = summary;
+}
+
+function getEvents(request, response) {
+  const url = `https://www.eventbriteapi.com/v3/events/search/?location.longitude=${request.query.data.longitude}&location.latitude=${request.query.data.latitude}&expand=venue&token=${process.env.EVENTBRITE_API_KEY}`;
+  superagent.get(url)
+    .then(result => {
+      let eventData = result.body.events.map( event => new Event(event.url, event.name.text, event.start.local, event.summary));
+      response.send(eventData);
+    }).catch(error => {
+      console.error(error);
+      response.status(500).send('Status 500: Unable to get Event data');
+    });
+}
+
 
 function Weather(day) {
   this.forecast = day.summary;
