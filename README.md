@@ -2,17 +2,19 @@
 # City-explorer
 
 **Author**: Anastasia Lebedeva, Aaron Imbrock
-**Version**: 1.0.2 (increment the patch/fix version number if you make more commits past your first submission)
+**Author**: Ludwin and Aaron finished Lab7 together before starting Lab8
+**Version**: 1.1.0
 
 ## Overview
 This app converts a location entered by the user into a latitude and longitude, then use those values to request weather information for that location and information from Evenbrite website. 
 
 ## Getting Started
-1. Use this link to get access to the front-end of the app https://nastinsk.github.io/city-explorer-front-end/
+1. Use this link to get access to the front-end of the app: https://aimbrock-codefellows.github.io/seattle-301n14/curriculum/city-explorer-app/front-end/
 2. User must fill the form on the index.html page.
-3. In "Enter the URL to your deployed back end" print : https://cityexplorerlab.herokuapp.com 
+3. In "Enter the URL to your deployed back end" print : http://lab07-backend-city-explorer.herokuapp.com/ 
 4. To display Google maps User will print his own Geocoding API Key in API KEY field.
 Then print the name of the location to display information about it.
+5. Access to Trello Board for City Explorer: https://trello.com/b/NWPbLwSg/city-explorer
 
 
 ## Architecture
@@ -35,7 +37,7 @@ Java Script, Express, Dotenv, Superagent, Cors for the backend
 ## **Navigator: Aaron** 
 ***
 
-# Feature #2:
+# Feature #2: Location
 ***
 ##  Locations: As a user, I want to enter the name of a location so that I do not need to look up the latitude and longitude every time I learn about a new location.
 ***
@@ -48,30 +50,30 @@ Java Script, Express, Dotenv, Superagent, Cors for the backend
 ## **Navigator: Aaron** 
 ***
 
-# Feature #3:
+# Feature #3: Weather
 ***
 ## Weather: As a user, I want to request current weather information so that I can learn more about the typical weather patterns in the location.
 ***
-* Estimate of time needed to complete: **2hours**
-* Start time: ** **
-* Finish time: ** **
-* Actual time needed to complete: ** **
+* Estimate of time needed to complete: **1hours**
+* Start time: **1:15pm**
+* Finish time: **2:45pm**
+* Actual time needed to complete: **30 mminutes**
 
-## **Driver:** 
-## **Navigator:** 
+## **Driver: Aaron**
+## **Navigator: Ludwin** 
 ***
 
-# Feature #4:
+# Feature #4: Eventbrite
 ***
 ## EventBrite: As a user, I want to request information about events in the area so that users can learn about what is taking place in the location.
 ***
-* Estimate of time needed to complete: ** 1hour**
-* Start time: ** **
-* Finish time: ** **
-* Actual time needed to complete: ** **
+* Estimate of time needed to complete: **1hour**
+* Start time: **2:50pm**
+* Finish time: **3:40pm**
+* Actual time needed to complete: **1 hour**
 
-## **Driver:** 
-## **Navigator:** 
+## **Driver: Ludwin** 
+## **Navigator: Aaron** 
 ***
 
 
