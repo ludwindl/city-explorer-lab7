@@ -5,7 +5,7 @@ const express = require('express');
 const app = express();
 const superagent = require('superagent');
 
-//add cors and superagent
+//
 const cors = require('cors');
 app.use(cors());
 
@@ -22,25 +22,8 @@ app.get('/location', (req,res) => {
     .then(location => res.send(location));
 });
 
-app.get('/weather', (request, response) => {
-  try {
-    const weatherData = getWeather();
-    response.send(weatherData);
-  }
-  catch(error) {
-    console.error(error);
-    response.status(500).send('Status: 500. Server error in /weather');
-  }
-});
+app.get('/weather', getWeather);
 
-function getWeather() {
-  const darkskyData = require('./data/darksky.json');
-  const weatherSummaries = [];
-  darkskyData.daily.data.map((day) => {
-    weatherSummaries.push(new Weather(day));
-  });
-  return weatherSummaries;
-}
 
 // constructor function to buld a city object instances
 function City(query, data){
@@ -50,17 +33,28 @@ function City(query, data){
   this.longitude = data.body.results[0].geometry.location.lng;
 }
 
-//weather constructor
 function Weather(day) {
   this.forecast = day.summary;
   this.time = new Date(day.time * 1000).toString().slice(0, 15);
 }
 
+// Helper functions
+function getWeather(request, response) {
+  const url = `https://api.darksky.net/forecast/${process.env.WEATHER_API_KEY}/${request.query.data.latitude},${request.query.data.longitude}`;
+  superagent.get(url)
+    .then(result => {
+      let weather = result.body.daily.data.map( day => new Weather(day));
+      response.send(weather);
+    }).catch(error => {
+      console.error(error);
+      response.status(500).send('Status 500: Unable to get weather');
+    });
+}
+
 function searchToLatLong(query){
-  const url =`https://maps.googleapis.com/maps/api/geocode/json?address=${query}&key=${process.env.GEOCODE_API_KEY}`;
+  const url = `https://maps.googleapis.com/maps/api/geocode/json?address=${query}&key=${process.env.GEOCODE_API_KEY}`;
   return superagent.get(url)
     .then(res => {
       return new City(query, res);
     });
 }
-
