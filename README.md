@@ -2,17 +2,19 @@
 # City-explorer
 
 **Author**: Anastasia Lebedeva, Aaron Imbrock
-**Version**: 1.0.2 (increment the patch/fix version number if you make more commits past your first submission)
+**Author**: Ludwin and Aaron finished Lab7 together before starting Lab8
+**Version**: 1.1.0
 
 ## Overview
 This app converts a location entered by the user into a latitude and longitude, then use those values to request weather information for that location and information from Evenbrite website. 
 
 ## Getting Started
-1. Use this link to get access to the front-end of the app https://nastinsk.github.io/city-explorer-front-end/
+1. Use this link to get access to the front-end of the app: https://aimbrock-codefellows.github.io/seattle-301n14/curriculum/city-explorer-app/front-end/
 2. User must fill the form on the index.html page.
-3. In "Enter the URL to your deployed back end" print : https://cityexplorerlab.herokuapp.com 
+3. In "Enter the URL to your deployed back end" print : http://lab07-backend-city-explorer.herokuapp.com/ 
 4. To display Google maps User will print his own Geocoding API Key in API KEY field.
 Then print the name of the location to display information about it.
+5. Access to Trello Board for City Explorer: https://trello.com/b/NWPbLwSg/city-explorer
 
 
 ## Architecture
