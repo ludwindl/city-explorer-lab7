@@ -35,7 +35,7 @@ Java Script, Express, Dotenv, Superagent, Cors for the backend
 ## **Navigator: Aaron** 
 ***
 
-# Feature #2:
+# Feature #2: Location
 ***
 ##  Locations: As a user, I want to enter the name of a location so that I do not need to look up the latitude and longitude every time I learn about a new location.
 ***
@@ -48,30 +48,30 @@ Java Script, Express, Dotenv, Superagent, Cors for the backend
 ## **Navigator: Aaron** 
 ***
 
-# Feature #3:
+# Feature #3: Weather
 ***
 ## Weather: As a user, I want to request current weather information so that I can learn more about the typical weather patterns in the location.
 ***
-* Estimate of time needed to complete: **2hours**
-* Start time: ** **
-* Finish time: ** **
-* Actual time needed to complete: ** **
+* Estimate of time needed to complete: **1hours**
+* Start time: **1:15pm**
+* Finish time: **2:45pm**
+* Actual time needed to complete: **30 mminutes**
 
-## **Driver:** 
-## **Navigator:** 
+## **Driver: Aaron**
+## **Navigator: Ludwin** 
 ***
 
-# Feature #4:
+# Feature #4: Eventbrite
 ***
 ## EventBrite: As a user, I want to request information about events in the area so that users can learn about what is taking place in the location.
 ***
-* Estimate of time needed to complete: ** 1hour**
-* Start time: ** **
-* Finish time: ** **
-* Actual time needed to complete: ** **
+* Estimate of time needed to complete: **1hour**
+* Start time: **2:50pm**
+* Finish time: **3:40pm**
+* Actual time needed to complete: **1 hour**
 
-## **Driver:** 
-## **Navigator:** 
+## **Driver: Ludwin** 
+## **Navigator: Aaron** 
 ***
 
 
