@@ -1,7 +1,7 @@
 
 # City-explorer
 
-**Author**: Anastasia Lebedeva, Aaron Imbrock
+**Author**: Ludwin
 **Author**: Ludwin and Aaron finished Lab7 together before starting Lab8
 **Version**: 1.1.0
 
@@ -24,40 +24,7 @@ Java Script, Express, Dotenv, Superagent, Cors for the backend
 
 ## Change Log
 
-# Feature #1: Data formatting
-***
-## As a user, I want the application to provide properly formatted data so that I can view similar data for any location I choose. NOTE: Do this first with the mock data before refactoring to an API call.
-***
-* Estimate of time needed to complete: **1 hour**
-* Start time: **6:30pm**
-* Finish time: **7:00**
-* Actual time needed to complete: **30 minutes**
 
-## **Driver: Anna ** 
-## **Navigator: Aaron** 
-***
-
-# Feature #2: Location
-***
-##  Locations: As a user, I want to enter the name of a location so that I do not need to look up the latitude and longitude every time I learn about a new location.
-***
-* Estimate of time needed to complete: **2hour**
-* Start time: **7:00pm**
-* Finish time: **9:00pm**
-* Actual time needed to complete: **2hours**
-
-## **Driver: Anna ** 
-## **Navigator: Aaron** 
-***
-
-# Feature #3: Weather
-***
-## Weather: As a user, I want to request current weather information so that I can learn more about the typical weather patterns in the location.
-***
-* Estimate of time needed to complete: **1hours**
-* Start time: **1:15pm**
-* Finish time: **2:45pm**
-* Actual time needed to complete: **30 mminutes**
 
 ## **Driver: Aaron**
 ## **Navigator: Ludwin** 
