@@ -37,7 +37,7 @@ function City(query, data){
 function Event(url, name, event_date, summary) {
   this.url = url;
   this.name = name;
-  // Date makes time stamp prettier
+  //Date makes time stamp prettier
   this.event_date = new Date(event_date).toDateString();
   this.summary = summary;
 }
