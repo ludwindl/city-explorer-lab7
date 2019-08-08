@@ -54,10 +54,14 @@ function getEvents(request, response) {
     });
 }
 
+/*function Weather(data) {
+  this.forecast = data.summary;
+  this.time = new Date(data.time * 1000).toString().slice(0, 15);
+}*/
 
-function Weather(day) {
-  this.forecast = day.summary;
-  this.time = new Date(day.time * 1000).toString().slice(0, 15);
+function Weather(data) {
+  this.forecast = data.summary;
+  this.time = new Date(data.time * 1000).toString().slice(0, 15);
 }
 
 // Helper functions
